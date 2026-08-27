@@ -1,170 +1,158 @@
+# 🌸 Anson's Pookalam 2026 🌸
+### *CODE-A-POOKALAM 2026 — TinkerHub RIT Kottayam*
 
-# 🌸 Code-a-Pookalam 2026🌸
-### *Create beautiful digital art through code this Onam season!*
-
----
-
-## 🎨 About the Challenge
-
-Welcome to **Code-a-Pookalam 2026** - a fun coding challenge organized by TinkerHub RIT! 
-
-Pookalam is a traditional floral carpet made during the festival of Onam in Kerala. In this challenge, we're bringing this beautiful tradition into the digital world! Use your creativity and coding skills to create stunning digital Pookalams using any programming language of your choice.
-
-Whether you're a beginner taking your first steps into programming or an experienced developer looking for a creative outlet, this challenge is for everyone! 
+> A cinematic, mathematically-crafted digital Pookalam — 12 concentric rings of pure code. No images, no libraries, just math, gradients, and Onam spirit.
 
 ---
-
-## 🌼How to Participate
-
-Follow these simple steps to join the challenge:
-
-### 1️⃣ Fork this Repository
-Click the **Fork** button at the top right of this repository to create your own copy.
-
-### 2️⃣ Clone Your Fork
-```bash
-git clone https://github.com/[YOUR-USERNAME]/CODE-A-POOKALAM-2026.git
-```
-
-### 3️⃣ Edit This README
-Replace this template README with your own submission details using the format provided below.
-
-### 4️⃣ Add Your Code
-Create your Pookalam using any programming language! Popular choices include:
-- 🐍 Python (with turtle, matplotlib, pygame)
-- 🌐 HTML/CSS/JavaScript
-- ☕ Java
-- 🎯 Processing
-- 🦀 Rust
-- And many more!
-
-### 5️⃣ Commit and Push to Your Fork
-```bash
-git add .
-git commit -m "My Code-a-Pookalam 2026 submission"
-git push origin main
-```
-
-### 6️⃣ Submit Your Repository
-Share your forked repository link with the organizers by **August 30, 2026**!
-
----
-
-## 📋 Rules
-
-1. **🍴 Fork Required**: You must fork this repository to participate
-2. **✏️ Edit README**: Replace this README with your submission details
-3. **💻 Any Language**: Use any programming language you're comfortable with
-4. **🎨 Be Creative**: Let your imagination run wild with colors, patterns, and designs
-5. **⏰ Deadline**: Submit your repository link by * *August 30, 2026, 11:59 PM IST**
-6. **🤝 Be Respectful**: Keep your code clean and family-friendly
-7. **📸 Include Output**: Add screenshots or images of your Pookalam
-8. **✅ Original Work**: Submit only your original code
-
----
-
-## 📝 README Template for Your Submission
-
-**Once you fork this repository, replace this entire README.md with the following format:**
-
-```markdown
-# 🌸 [Your Name]'s Pookalam 2026 🌸
 
 ## 👨‍💻 About Me
-- **Name:** [Your Full Name]
-- **Institution/Company:** [Your School/College/Company]
-- **GitHub:** [@your-username](https://github.com/your-username)
-- **Programming Language Used:** [Language]
+
+- **Name:** Anson Boby
+- **Institution:** RIT Kottayam
+- **GitHub:** [@ansonboby](https://github.com/ansonboby)
+- **Programming Language Used:** HTML5 Canvas + Vanilla JavaScript (zero dependencies)
+- **Lines of Code:** ~1120 (single file, pure code — no PNG/JPG tiles)
+
+---
 
 ## 🎨 My Pookalam
 
 ### Description
-[Write a brief description of your Pookalam design, inspiration, or the approach you took]
+
+This isn't a static drawing — it's a **living Pookalam that blooms**.
+
+Inspired by the traditional *Athapookalam* laid on Onam morning, the design starts from a glowing *Nilavilakku* (brass lamp) center and blooms outward through **12 mathematically precise rings** — each with its own geometry, color theory, and animation. It fuses Kerala tradition with TinkerHub's maker spirit:
+
+- The **central yantra** and lotus petals honor classical Pookalam geometry
+- The **Pulli Kolam** ring (dot-grid with interwoven curves) brings authentic South-Indian floor art
+- The **Paisley/Mango leaf** ring celebrates Kerala's iconic *manga* motif
+- The **text ring** — *TINKERHUB • RIT KOTTAYAM • CODE-A-POOKALAM 2026* — wraps the design like a festive border
+- Falling marigold petals, light rays, and golden shimmer make it feel alive
+
+Every petal is a **cubic Bezier curve**, every gradient is computed with polar math, and the whole thing runs at 60fps in a single HTML file.
 
 ### Preview
-![My Pookalam](output/pookalam-preview.png)
-*Add more images if you have multiple views or animations*
 
-### Features
-- [Feature 1 - e.g., "Colorful geometric patterns"]
-- [Feature 2 - e.g., "Interactive elements"]
+![My Pookalam](output/preview.png)
+
+> **Live:** Just open `index.html` — it blooms automatically in ~6 seconds. Click *Bloom* to replay.
+> **Tip:** Press `S` to save a 2× high-res PNG for your screenshot.
+
+### Features — Why This Wins 🏆
+
+- **12 unique rings — now with hyper-dense inner core:**
+  1. **Hybrid Nilavilakku + Gear** — brass lamp glow (pulsating) + 16-tooth TinkerHub gear rotating `0.008` + 3-layer lotus (12 crimson / 8 orange / 6 maroon) + flickering diya flame
+  2. **12-petal crimson lotus** — counter-rotating `0.0045` with hover-swell + vein highlight
+  3. **16-petal orange lotus** — interleaved offset `π/16`, counter ` -0.0038` for moiré
+  4. **Sri-Yantra Gold** — 9 interlocked triangles (4 up / 5 down) double-rotating + 8 binding dots + pulsating bindu
+  5. Diamond band — 24 alternating maroon/gold diamonds
+  6. 24-petal emerald lotus with triple-vein detail
+  7. Pulli Kolam — 20 dots with interwoven `quadraticCurveTo` curves
+  8. Paisley/Mango leaf ring — 16 bezier leaves counter-rotating ` -0.0028`
+  9. Circular text ring — `TINKERHUB • RIT KOTTAYAM • CODE-A-POOKALAM 2026`
+  10. Scalloped maroon border (48 arches)
+  11. Flower rim — 60 marigold dots + 12 tiny 5-petal flowers rotating `0.0035`
+  12. Outer golden glow with 48 sparkle ticks
+
+- **Cinematic bloom + perpetual motion** — `easeOutBack` staggered center-out, each ring bursts particles, then **every ring breathes `0.014` + counter-rotates `0.0009` + shimmer sweep** — no longer static!
+- **4 themes + auto-cycle** (press `T` or wait 14s):
+  - `TRADITIONAL · ONAM` — maroon / gold / green / cream
+  - `ROYAL · KERALA` — deep purple / gold
+  - `SUNSET · VIBRANT` — vermillion / amber
+  - `FOREST · BLOOM` — emerald / cream
+
+- **Interactivity that wows judges:**
+  - **Hover** — petals near cursor swell `+18%`
+  - **Click anywhere** — golden ripple + 18 sparkle burst
+  - **Mouse light** — radial glow follows cursor
+  - **36 falling petals** drift with wind `sin` sway
+  - **Center pulse** + 12 rotating golden rays
+  - **Light rays** from center
+
+- **High-res export** — `S` saves `CODE-A-POOKALAM-2026-TinkerHub-RIT.png` (retina-ready)
+
+- **Zero dependencies** — one file, no build step, no `npm install`, runs offline, works on phone + laptop
+
+### Keyboard Controls
+
+| Key | Action |
+|-----|--------|
+| `Space` | Pause / Resume |
+| `T` | Cycle theme (4 palettes) |
+| `S` | Save high-res PNG |
+| `R` / `B` | Replay bloom (restart) |
+| `+` / `-` | Speed up / Slow down |
+| Mouse move | Petals near cursor glow |
+| Click | Ripple burst |
+
+---
 
 ## 🚀 How to Run
 
 ### Prerequisites
-[List any requirements, libraries, or software needed]
-```bash
-# Example for Python
-pip install matplotlib turtle numpy
-```
+
+- Any modern browser (Chrome / Firefox / Safari / Edge) — **no server, no installs**
 
 ### Running the Code
+
 ```bash
-# Add your specific run commands here
-python pookalam.py
-# or
+# Option 1 — double click
 open index.html
-# or your specific instructions
+# on Linux:
+xdg-open index.html
+
+# Option 2 — serve (optional)
+python3 -m http.server 8000
+# then visit http://localhost:8000
 ```
+
+That's it. No `pip`, no `npm`.
+
+### Saving Your Preview Image
+
+1. Open `index.html`
+2. Wait for bloom to finish (~6s)
+3. Press `S` or click **Save PNG**
+4. Move the file to `output/preview.png`:
+
+```bash
+mkdir -p output
+mv ~/Downloads/CODE-A-POOKALAM-2026-TinkerHub-RIT.png output/preview.png
+```
+
+---
 
 ## 📁 File Structure
+
 ```
-Code-a-Pookalam-2026/
-├── README.md (this file)
-├── pookalam.py (or your main file)
-└── requirements.txt (if applicable)
+CODE-A-POOKALAM-2026/
+├── index.html          ← entire pookalam (single file, ~1000 lines)
+├── README.md           ← this file
+└── output/
+    └── preview.png     ← screenshot (press S to generate)
 ```
+
+---
+
+## 🧠 Technical Approach
+
+**Core idea:** Every visual element is math, not images.
+
+- **Petal geometry:** `petalPath(len, wid, t)` uses two symmetric cubic Bezier curves from the center outward — `t` is the bloom progress (0→1) that scales control points for the elastic bloom.
+- **Color:** Each ring has a `radialGrad` or `linearGrad` — e.g., crimson petals go `cream → crimson → deep maroon` radially so they look 3D, not flat.
+- **Animation:** `progress` goes 0→1. Each ring's window is `start = i/12*0.78, dur=0.32` — so rings bloom sequentially center-out. `easeOutBack` gives the organic overshoot.
+- **Depth:** `shadowBlur` + inner highlights (semi-transparent white bezier) + gold stroke per petal.
+- **Pulli Kolam:** 20 anchor dots placed on a circle, connected with alternating `quadraticCurveTo` (inward vs outward) — the classic Kolam weave.
+- **Paisley:** Mango leaf shape with two Beziers + inner swirl path + gold tip dot.
+- **Interaction:** Mouse angle vs petal angle → `hoverBoost` scales length/width; click spawns `ripples` (expanding stroked circles) + `particles` (glowing dots with velocity + decay).
+- **Performance:** Single canvas, `requestAnimationFrame`, DPR-aware sizing, no allocations in hot loop except particles.
+
+---
 
 ## 🎊 Happy Onam! 🎊
-*Submitted for Code-a-Pookalam 2026 by TinkerHub RIT*
-```
 
----
+*ഓണം ആശംസകൾ — May your code bloom as beautifully as a Pookalam!*
 
-## 💡 Tips for Participants
+**Submitted for Code-a-Pookalam 2026 by TinkerHub RIT**
 
-- **Get Creative**: Think beyond traditional Pookalam patterns - add animations, interactivity, or 3D effects!
-- **Document Well**: A good README makes your submission stand out
-- **Include Visuals**: Screenshots, GIFs, or videos make your work more engaging
-- **Share Your Process**: Explain your approach and what you learned
-- **Test Your Code**: Make sure others can run your code with clear instructions
-
----
-
-## 📚 Resources & Inspiration
-
-### Programming Resources
-- **Python Graphics**: Turtle, Matplotlib, Pygame, PIL etc
-
-### Pookalam Design Ideas
-- Traditional geometric patterns
-- Floral motifs and mandala designs
-- Colorful concentric circles
-- Interactive/animated elements
-- 3D rendered Pookalams
-
----
-
-## 🏢 Organizer Information
-
-**Event Organized By:** TinkerHub RIT  
-**Contact:** tinkerhub@rit.ac.in
-**Event Date:**August 2026
-**Deadline:** August 30, 2026  
-
-### About TinkerHub RIT
-TinkerHub RIT is a community of makers, learners, and innovators at Rajiv Gandhi Institute of Technology. We organize various tech events, workshops, and coding challenges to foster creativity and learning in technology.
-
----
-
-## 🎊 Happy Coding & Happy Onam! 🎊
-
-*May your code bloom as beautifully as a traditional Pookalam!*
-
----
-
-**⭐ Don't forget to star this repository if you enjoyed the challenge!**
-
-### 🔗 Share Your Work
-After completing your submission, share it on social media with:
-**#CodeAPookalam2026 #TinkerHubRIT #Onam2026 #CodingChallenge**
+#CodeAPookalam2026 #TinkerHubRIT #Onam2026 #CodingChallenge
