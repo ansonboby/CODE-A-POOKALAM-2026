@@ -130,14 +130,6 @@ CODE-A-POOKALAM-2026/
 - **Text ring:** labels are constrained to non-overlapping top/bottom hemispheres with consistent orientation.
 - **Performance:** single canvas, `requestAnimationFrame`, DPR-aware sizing, and no external graphics libraries.
 
-## Submission
-
-**Participant:** Anson Boby  
-**Institution:** College of Engineering Kallooppara  
-**Challenge:** Code-a-Pookalam 2026  
-**Organizer:** TinkerHub RIT  
-**Submission format:** Code + README + final screenshot
-
 ## Happy Onam! 
 
 *ഓണം ആശംസകൾ — May your code bloom as beautifully as a Pookalam!*
