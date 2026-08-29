@@ -13,9 +13,9 @@
 
 ## 🎨 My Pookalam
 
-### Final Preview
+### Final Screenshot
 
-![Final Pookalam Preview](output/preview.png)
+![Final Pookalam Screenshot](output/preview.jpg)
 
 ### Description
 
@@ -64,7 +64,7 @@ The circular text renderer was corrected so the decorative labels remain readabl
 
 - The top and bottom strings use separate hemispheres, preventing overlap.
 - Character-by-character flipping no longer causes the `6` in `2026` to appear reversed.
-- `TINKERHUB`, `RIT KOTTAYAM`, `CODE-A-POOKALAM 2026`, `ONAM 2026`, and `CREATED WITH LOVE` render cleanly.
+- `TINKERHUB`, `RIT KOTTAYAM`, `CODE-A-POOKALAM 2026`, `ONAM 2026`, and `CREATED WITH LOVE` render consistently around the ring.
 
 ## 🎮 Keyboard Controls
 
@@ -99,15 +99,13 @@ python3 -m http.server 8000
 
 No `pip`, no `npm`, no build step.
 
-### Saving the Screenshot
+### Screenshot
 
-The repository includes the final screenshot at:
+The final screenshot is included in the repository at:
 
 ```text
-output/preview.png
+output/preview.jpg
 ```
-
-You can also regenerate a fresh 2× PNG by opening `index.html` and pressing `S` or clicking **Save PNG**.
 
 ## 📁 File Structure
 
@@ -116,7 +114,7 @@ CODE-A-POOKALAM-2026/
 ├── index.html              ← complete single-file pookalam
 ├── README.md               ← submission documentation
 └── output/
-    └── preview.png         ← final screenshot / preview
+    └── preview.jpg         ← final screenshot / preview
 ```
 
 ## 🧠 Technical Approach
@@ -138,7 +136,7 @@ CODE-A-POOKALAM-2026/
 **Institution:** College of Engineering Kallooppara  
 **Challenge:** Code-a-Pookalam 2026  
 **Organizer:** TinkerHub RIT  
-**Submission format:** Code + README + preview screenshot
+**Submission format:** Code + README + final screenshot
 
 ## 🎊 Happy Onam! 🎊
 
