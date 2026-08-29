@@ -113,6 +113,11 @@
 <div id="hint"><b>CLICK</b> TO RIPPLE &nbsp;·&nbsp; <b>HOVER</b> TO GLOW<br><b>SPACE</b> PAUSE &nbsp;·&nbsp; <b>S</b> SAVE</div>
 
 <script>
+/* ─────────────────────────────────────────
+   CODE-A-POOKALAM 2026  ·  Winner Edition
+   Single-file, zero-deps, pure canvas math
+   12 rings · bezier petals · pulli-kolam · paisley
+   ───────────────────────────────────────── */
 const C = document.getElementById('c');
 const X = C.getContext('2d');
 let DPR = Math.min(devicePixelRatio||1, 2);
@@ -567,7 +572,7 @@ function drawPaisley(cx,cy,r,t,c){
 }
 
 const TEXT_TOP = Array.from("  ✦  TINKERHUB  ✦  RIT  ·  KOTTAYAM  ✦  CODE-A-POOKALAM 2026  ✦  ");
-const TEXT_BOT = Array.from("  🌸  ONAM 2026  🌸  CREATED WITH LOVE    ");
+const TEXT_BOT = Array.from("  🌸  ONAM 2026  🌸  CREATED WITH LOVE  🌸  ");
 function drawTextRing(cx,cy,r,t,c){
   X.save(); X.globalAlpha=t;
   // dark band
@@ -618,10 +623,16 @@ function drawTextRing(cx,cy,r,t,c){
       X.restore();
     }
   }
-  // top arc: -122° to +122°
-  circularArcText(TEXT_TOP, r*0.875, -Math.PI*0.68, Math.PI*0.68, true);
-  // bottom arc: 122° to 238° via bottom (0.68π to 1.32π is narrow, use 0.32π to 1.68π)
-  circularArcTextBottom(TEXT_BOT, r*0.875, Math.PI*0.32, Math.PI*1.68);
+  // Split the ring into exactly two hemispheres — top half (-90°..+90°) and
+  // bottom half (+90°..+270°). Keeping each string strictly within its own
+  // hemisphere guarantees: (1) the two arcs never overlap/double-draw, and
+  // (2) no single character ever sits past the ±90° line, so the "flip for
+  // readability" logic below never has to flip mid-word (which previously
+  // rotated stray characters 180° and made e.g. a trailing "6" read as "9").
+  const topStart = -Math.PI/2, topEnd = Math.PI/2;
+  const botStart = Math.PI/2, botEnd = Math.PI*1.5;
+  circularArcText(TEXT_TOP, r*0.875, topStart, topEnd, true);
+  circularArcTextBottom(TEXT_BOT, r*0.875, botStart, botEnd);
 
   // decorative small dots between text
   X.fillStyle='rgba(255,213,79,0.45)';
