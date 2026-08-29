@@ -113,11 +113,6 @@
 <div id="hint"><b>CLICK</b> TO RIPPLE &nbsp;·&nbsp; <b>HOVER</b> TO GLOW<br><b>SPACE</b> PAUSE &nbsp;·&nbsp; <b>S</b> SAVE</div>
 
 <script>
-/* ─────────────────────────────────────────
-   CODE-A-POOKALAM 2026  ·  Winner Edition
-   Single-file, zero-deps, pure canvas math
-   12 rings · bezier petals · pulli-kolam · paisley
-   ───────────────────────────────────────── */
 const C = document.getElementById('c');
 const X = C.getContext('2d');
 let DPR = Math.min(devicePixelRatio||1, 2);
@@ -572,7 +567,7 @@ function drawPaisley(cx,cy,r,t,c){
 }
 
 const TEXT_TOP = Array.from("  ✦  TINKERHUB  ✦  RIT  ·  KOTTAYAM  ✦  CODE-A-POOKALAM 2026  ✦  ");
-const TEXT_BOT = Array.from("  🌸  ONAM 2026  🌸  CREATED WITH LOVE  🌸  ");
+const TEXT_BOT = Array.from("  🌸  ONAM 2026  🌸  CREATED WITH LOVE    ");
 function drawTextRing(cx,cy,r,t,c){
   X.save(); X.globalAlpha=t;
   // dark band
