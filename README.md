@@ -1,9 +1,9 @@
-# 🌸 Anson's Pookalam 2026 🌸
+# Anson's Pookalam 2026 
 ### *CODE-A-POOKALAM 2026 — TinkerHub RIT Kottayam*
 
 > A cinematic, mathematically-crafted digital Pookalam — 12 concentric rings of pure code. No images, no libraries, just math, gradients, and Onam spirit.
 
-## 👨‍💻 About Me
+## About Me
 
 - **Name:** Anson Boby
 - **Institution:** College of Engineering Kallooppara
@@ -11,7 +11,7 @@
 - **Programming Language Used:** HTML5 Canvas + Vanilla JavaScript (zero dependencies)
 - **Lines of Code:** ~1120 (single file, pure code — no PNG/JPG tiles)
 
-## 🎨 My Pookalam
+## My Pookalam
 
 ### Final Screenshot
 
@@ -34,7 +34,7 @@ Every petal is a **cubic Bezier curve**, every gradient is computed with polar m
 > **Live:** Just open `index.html` — it blooms automatically in ~6 seconds. Click **Bloom** to replay.
 > **Tip:** Press `S` to save a 2× high-res PNG for your screenshot.
 
-### Features — Why This Wins 🏆
+### Features — Why This Wins 
 
 1. **Hybrid Nilavilakku + Gear** — brass lamp glow + rotating 16-tooth TinkerHub gear + 3-layer lotus + flickering diya flame
 2. **12-petal crimson lotus** — counter-rotating with hover-swell + vein highlight
@@ -117,7 +117,7 @@ CODE-A-POOKALAM-2026/
     └── preview.jpg         ← final screenshot / preview
 ```
 
-## 🧠 Technical Approach
+## Technical Approach
 
 **Core idea:** Every visual element is math, not an imported image.
 
@@ -130,7 +130,7 @@ CODE-A-POOKALAM-2026/
 - **Text ring:** labels are constrained to non-overlapping top/bottom hemispheres with consistent orientation.
 - **Performance:** single canvas, `requestAnimationFrame`, DPR-aware sizing, and no external graphics libraries.
 
-## 🏁 Submission
+## Submission
 
 **Participant:** Anson Boby  
 **Institution:** College of Engineering Kallooppara  
@@ -138,10 +138,8 @@ CODE-A-POOKALAM-2026/
 **Organizer:** TinkerHub RIT  
 **Submission format:** Code + README + final screenshot
 
-## 🎊 Happy Onam! 🎊
+## Happy Onam! 
 
 *ഓണം ആശംസകൾ — May your code bloom as beautifully as a Pookalam!*
 
 **Submitted for Code-a-Pookalam 2026 by TinkerHub RIT**
-
-#CodeAPookalam2026 #TinkerHubRIT #Onam2026 #CodingChallenge
