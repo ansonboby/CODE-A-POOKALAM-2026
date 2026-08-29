@@ -15,7 +15,7 @@
 
 ### Final Screenshot
 
-![Final Pookalam Screenshot](output/preview.jpg)
+![Final Pookalam Screenshot](output/preview.png)
 
 ### Description
 
